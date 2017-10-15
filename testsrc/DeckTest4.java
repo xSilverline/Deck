@@ -61,4 +61,11 @@ public class DeckTest4
         y = null;
 
     }
+
+    @Test
+    public void testGettingTheCard() {
+        x = new Deck(52);
+        assertNotNull(x.ShowTopCard());
+    }
+
 }
