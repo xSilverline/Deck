@@ -50,7 +50,7 @@ public class DeckTest4
         x.Shuffling();
         assertNotEquals("Decks are not shuffled",Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
         x.Sorting();
-        assertEquals("Deck are not the same", Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
+        assertEquals("Decks are not the same", Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
     }
     @After
     public void deckDestroyer()
