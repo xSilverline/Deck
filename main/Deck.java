@@ -7,11 +7,12 @@ import java.util.Comparator;
 public class Deck 
 {
 	ArrayList<Card> cards= new ArrayList<>();
-	private int minimalCard;
+
 	private String color;
 	
 	Deck(int numberOfCards)
 	{
+		int minimalCard;
 		if(numberOfCards == 52) minimalCard=2;
 		else
 		if(numberOfCards == 32) minimalCard=7;

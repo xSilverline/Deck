@@ -2,8 +2,8 @@
 
 class Card implements Comparable<Card>
 {
-	public String color;
-	public int value;
+	private String color;
+	private int value;
 	
 	Card(int Value,String Color)
 	{
