@@ -39,7 +39,7 @@ public class DeckTest4
     public void testShufflingDeckProperly()
     {
         assertTrue("Deck are not the same", Objects.equals(Arrays.toString(x.cards.toArray()), Arrays.toString(y.cards.toArray())));
-        x.Shuffling();
+        x.shuffling();
         assertFalse("Decks are the same", Objects.equals(Arrays.toString(x.cards.toArray()), Arrays.toString(y.cards.toArray())));
     }
 
@@ -47,9 +47,9 @@ public class DeckTest4
     public void testSortingDeckProperly()
     {
         assertEquals("Deck are not the same", Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
-        x.Shuffling();
+        x.shuffling();
         assertNotEquals("Decks are not shuffled",Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
-        x.Sorting();
+        x.sorting();
         assertEquals("Decks are not the same", Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
     }
     @After
@@ -65,7 +65,7 @@ public class DeckTest4
     @Test
     public void testGettingTheCard() {
         x = new Deck(52);
-        assertNotNull(x.ShowTopCard());
+        assertNotNull(x.showTopCard());
     }
 
 }

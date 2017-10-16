@@ -43,7 +43,7 @@ public class DeckTest3 extends TestCase
         Deck y = new Deck(52);
 
         assertTrue("Deck are not the same", Objects.equals(Arrays.toString(x.cards.toArray()), Arrays.toString(y.cards.toArray())));
-        x.Shuffling();
+        x.shuffling();
         assertFalse("Decks are the same", Objects.equals(Arrays.toString(x.cards.toArray()), Arrays.toString(y.cards.toArray())));
     }
 
@@ -54,9 +54,9 @@ public class DeckTest3 extends TestCase
         Deck y = new Deck(52);
 
         assertEquals("Deck are not the same", Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
-        x.Shuffling();
+        x.shuffling();
         assertNotEquals("Decks are not shuffled",Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
-        x.Sorting();
+        x.sorting();
         assertEquals("Deck are not the same", Arrays.toString(x.cards.toArray()),Arrays.toString(y.cards.toArray()));
     }
 

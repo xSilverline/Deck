@@ -37,17 +37,17 @@ public class Deck
 		cards.sort(Comparator.naturalOrder());
 	}
 	
-	public void Sorting()
+	public void sorting()
 	{
 		cards.sort(Comparator.naturalOrder());
 	}
 	
-	public void Shuffling()
+	public void shuffling()
 	{
 		Collections.shuffle(cards);
 	}
 	
-	public Card ShowTopCard()
+	public Card showTopCard()
 	{
 		return cards.get(0);
 	}
